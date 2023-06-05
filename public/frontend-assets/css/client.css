@@ -1,0 +1,128 @@
+
+.client_banner {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/client_banner.jpg");
+    margin-top: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/*----------------- Feature Plans --------------------*/
+
+#future {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.our_future_card_container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.our_future_card_container .our_future_card {
+    margin-top: 6rem;
+    margin-bottom: 1rem;
+    position: relative;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: var(--box-shadow);
+    transition: all 0.3s;
+    overflow: hidden;
+    border-radius: var(--radius);
+}
+
+.our_future_card_container .our_future_card .future_card_title {
+    padding-left: 20px;
+    margin-top: 20px;
+}
+
+.our_future_card_container .our_future_card .future_card_body {
+    padding: 20px;
+    text-align: left;
+}
+
+.our_future_card_container .our_future_card .future_card_img {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100%;
+    height: 250px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    overflow: hidden;
+}
+
+.our_future_card_container .our_future_card .future_card_img img {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100%;
+    height: 100% !important;
+}
+
+.our_future_card:hover {
+    transform: translateY(-20px);
+    cursor: pointer;
+}
+
+.our_future_card_container:last-child {
+    border-right: none;
+}
+
+
+/*-------------------------- Our Clients -----------------------*/
+
+#clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.our_clients_card {
+    width: 90%;
+    padding: 20px;
+    margin: 3rem auto;
+    background-color: #FAFAFA;
+    border-radius: var(--radius);
+    font-size: 1rem;
+}
+.our_clients_card .title {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 1.2rem;
+    align-items: center;
+    gap: 0.5rem;
+    opacity: 1;
+    margin-bottom: 1rem;
+}
+.our_clients_card .title .underline {
+    background: #ED1C24;
+    height: 10px;
+    width: 5%;
+    opacity: 0.5;
+}
+.our_clients_card .content {
+    opacity: 1;
+}
+
+
+
+@media screen and (min-width: 768px) {
+    .our_future_card_container {
+        border-right: 3px solid #ebebeb;
+    }
+    .our_future_card_container .our_future_card {
+        margin-top: 4rem;
+        width: 75%;
+    }
+    .title {
+        font-size: 2.2rem;
+    }
+}
+
